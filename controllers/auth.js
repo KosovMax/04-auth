@@ -6,7 +6,6 @@ const SECRET_KEY = process.env.JWT_SECRET
 
 
 const register = async (req, res, next) => {
-
     try{
         const { email } = req.body
         const auth = await Auth.findByEmail(email)
