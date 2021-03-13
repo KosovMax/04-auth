@@ -83,5 +83,4 @@ module.exports = {
     register,
     login,
     logout,
-    // current
 }
