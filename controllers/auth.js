@@ -37,7 +37,6 @@ const register = async (req, res, next) => {
 }
 
 const login = async (req, res, next) => {
-
     try{
         const { email, password } = req.body
         const auth = await Auth.findByEmail(email)
@@ -79,9 +78,6 @@ const logout = async (req, res, next) => {
     return res.status(HttpCode.NO_CONTENT).json({})
 }
 
-// const current = async (req, res, next) => {
-//     res.json({message:'current'})
-// }
 
 module.exports = {
     register,
